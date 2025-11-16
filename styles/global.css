@@ -1,0 +1,79 @@
+:root {
+
+    /* COLORS */
+    --content-primary: #F5F4F5;
+    --content-secondary: #98959D;
+    --content-tertiary: #666666;
+    --content-brand: #9282FA;
+
+    --background-primary: #14151D;
+    --background-secondary: #1E1E1E;
+    --background-tertiary: #2E2C30;
+    --background-brand: #9282FA;
+    --background-highlights: #BDB4FA;
+
+    --border-primary: #3E3C41;
+    --border-secondary: #86818C;
+    --border-brand: #9282FA;
+    --border-divisor: #353339;
+
+    --accent-blue: #027DF0;
+    --accent-blue-light: #16487A;
+    --accent-yellow: #F0DC02;
+    --accent-yellow-light: #756E1B;
+    --accent-orange: #F09102;
+    --accent-orange-light: #75501B;
+
+
+    /* FONT FAMILIES */
+    --font-family-title: "Inter Tight", sans-serif;
+    --font-family-base: "Inter", sans-serif;
+
+    --fs-title: 1.5rem;
+    --fs-p-md: 0.875rem;
+    --fs-p-sm: 0.75rem;
+    --fs-label-lg: 1rem;
+    --fs-label-md: 0.875rem;
+    --fs-label-sm: 0.75rem;
+    --fs-link: 0.75rem;
+
+    --lh-title: 2rem;
+    --lh-p-md: 1.5rem;
+    --lh-p-sm: 1rem;
+    --lh-label-lg: 1.5rem;
+    --lh-label-md: 1.5rem;
+    --lh-label-sm: 1rem;
+    --lh-link: 1rem;
+
+    --fw-bold: 700;
+    --fw-medium: 500;
+
+    /* SHORTHAND FONT VARIABLES */
+    --font-title: normal normal var(--fw-bold) var(--fs-title) / var(--lh-title) var(--font-family-title);
+
+    --font-p-md: normal normal var(--fw-medium) var(--fs-p-md) / var(--lh-p-md) var(--font-family-base);
+    --font-p-sm: normal normal var(--fw-medium) var(--fs-p-sm) / var(--lh-p-sm) var(--font-family-base);
+
+    --font-label-lg: normal normal var(--fw-bold) var(--fs-label-lg) / var(--lh-label-lg) var(--font-family-base);
+    --font-label-md: normal normal var(--fw-bold) var(--fs-label-md) / var(--lh-label-md) var(--font-family-base);
+    --font-label-sm: normal normal var(--fw-bold) var(--fs-label-sm) / var(--lh-label-sm) var(--font-family-base);
+
+    --font-link: normal normal var(--fw-medium) var(--fs-link) / var(--lh-link) var(--font-family-base);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+button,
+input,
+a {
+    font-family: var(--font-family-base);
+}
+
+header {
+    padding: 0.75rem 1.25rem;
+}
