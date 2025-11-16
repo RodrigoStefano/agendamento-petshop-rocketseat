@@ -74,6 +74,6 @@ a {
     font-family: var(--font-family-base);
 }
 
-header {
-    padding: 0.75rem 1.25rem;
+ul {
+    list-style: none;
 }

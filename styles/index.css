@@ -6,6 +6,15 @@
     background-color: var(--background-primary);
 }
 
+#layout {
+    max-width: 54.375rem;
+    margin: 0 auto;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 #logo {
     width: max-content;
     padding: 0.75rem 1.25rem;
@@ -63,11 +72,57 @@ header {
 }
 
 .date-wrapper .date-icon {
-    width: 18px;
-    height: 18px;
+    width: 1.125rem;
+    height: 1.125rem;
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.card {
+    background-color: var(--background-tertiary);
+    border-radius: 10px;
+}
+
+.title-card {
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.title-time {
+    font: var(--font-label-lg);
+    color: var(--content-primary);
+    text-align: start;
+    flex: 1;
+}
+
+.time {
+    font: var(--font-label-lg);
+    color: var(--content-secondary);
+}
+
+.schedule {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

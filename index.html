@@ -20,24 +20,65 @@
         <img src="./image/svg/logo.svg" alt="" />
       </div>
 
-      <header>
-        <div id="title">
-          <h1>Sua agenda</h1>
-          <p>
-            Aqui você pode ver todos os clientes e serviços agendados para hoje.
-          </p>
-        </div>
+      <div id="layout">
+        <header>
+          <div id="title">
+            <h1>Sua agenda</h1>
+            <p>
+              Aqui você pode ver todos os clientes e serviços agendados para
+              hoje.
+            </p>
+          </div>
 
-        <div class="date-wrapper">
-          <img src="./image/svg/calendar.svg" alt="Icone de calendário" />
-          <input type="date" id="calendar" />
-          <img
-            src="./image/svg/arrow-down.svg"
-            alt="Seta apontando para baixo"
-            class="date-icon"
-          />
+          <div class="date-wrapper">
+            <img src="./image/svg/calendar.svg" alt="Icone de calendário" />
+            <input type="date" id="calendar" />
+            <img
+              src="./image/svg/arrow-down.svg"
+              alt="Seta apontando para baixo"
+              class="date-icon"
+            />
+          </div>
+        </header>
+
+        <div id="list">
+          <div class="card">
+            <div class="title-card">
+              <img src="./image/svg/icon-morning.svg" alt="Icone de sol" />
+              <span class="title-time"> Manhã </span>
+              <strong class="time"> 09h-12h </strong>
+            </div>
+            <ul>
+              <li class="schedule"></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="title-card">
+              <img
+                src="./image/svg/icon-afternoon.svg"
+                alt="Icone de sol com nuvens"
+              />
+              <span class="title-time"> Tarde </span>
+              <strong class="time"> 13h-18h </strong>
+            </div>
+            <ul>
+              <li class="schedule"></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="title-card">
+              <img src="./image/svg/icon-night.svg" alt="Icone de lua" />
+              <span class="title-time"> Noite </span>
+              <strong class="time"> 19h-21h </strong>
+            </div>
+            <ul>
+              <li class="schedule"></li>
+            </ul>
+          </div>
         </div>
-      </header>
+      </div>
     </div>
   </body>
 </html>
