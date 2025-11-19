@@ -4,11 +4,12 @@
     --content-primary: #F5F4F5;
     --content-secondary: #98959D;
     --content-tertiary: #666666;
+    --content-quartiary: #050505;
     --content-brand: #9282FA;
 
     --background-primary: #14151D;
     --background-secondary: #1E1E1E;
-    --background-tertiary: #2E2C30;
+    --background-tertiary: #23242C;
     --background-brand: #9282FA;
     --background-highlights: #BDB4FA;
 
@@ -76,4 +77,20 @@ a {
 
 ul {
     list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--border-primary);
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
 }
