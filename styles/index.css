@@ -115,10 +115,62 @@ header {
     color: var(--content-secondary);
 }
 
-.schedule {
+ul {
     padding: 1.25rem;
+}
+
+.schedule {
+    padding: 1rem 0.75rem;
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid var(--border-divisor);
+}
+
+li:last-child .schedule {
+    border: none;
+}
+
+.header-schedule {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.time-schedule {
+    font: var(--font-label-md);
+    color: var(--content-primary);
+}
+
+.pet-and-tutor-info {
+    width: 13.75rem;
+    font: var(--font-p-md);
+    color: var(--content-secondary);
+}
+
+.pet-name {
+    font: var(--font-label-md);
+    color: var(--content-primary);
+}
+
+.service {
+    flex: 1;
+    font: var(--font-p-md);
+    color: var(--content-secondary);
+    text-align: start;
+}
+
+.btn-remove-schedule {
+    margin-top: 8px;
+    background: none;
+    border: none;
+    font: var(--font-p-sm);
+    color: var(--content-tertiary);
+    text-align: end;
+    transition: all 0.2s linear;
+}
+
+.btn-remove-schedule:hover {
+    color: var(--content-primary);
+    text-decoration: underline;
 }
 
 #footer-mobile {
@@ -162,6 +214,12 @@ header {
 
     #layout {
         padding: 0.75rem 5rem;
+    }
+
+    .schedule {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
