@@ -1,6 +1,8 @@
 :root {
 
     /* COLORS */
+    --black: rgba(0, 0, 0, 0.3);
+
     --content-primary: #F5F4F5;
     --content-secondary: #98959D;
     --content-tertiary: #666666;
@@ -81,6 +83,8 @@ ul {
 
 button {
     cursor: pointer;
+    background: none;
+    border: none;
 }
 
 ::-webkit-scrollbar {

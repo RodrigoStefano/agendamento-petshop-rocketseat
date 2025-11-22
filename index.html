@@ -12,278 +12,299 @@
 
     <link rel="stylesheet" href="./styles/index.css" />
 
+    <script src="./script.js" defer></script>
+
     <title>Mundo PetShop</title>
   </head>
   <body>
     <div id="app">
-      <div id="logo">
-        <img src="./image/svg/logo.svg" alt="" />
-      </div>
+      <div id="content">
+        <div id="logo">
+          <img src="./image/svg/logo.svg" alt="" />
+        </div>
 
-      <div id="layout">
-        <header>
-          <div id="title">
-            <h1>Sua agenda</h1>
-            <p>
-              Aqui você pode ver todos os clientes e serviços agendados para
-              hoje.
-            </p>
-          </div>
-
-          <div class="date-wrapper">
-            <img src="./image/svg/calendar.svg" alt="Icone de calendário" />
-            <input type="date" id="calendar" />
-            <img
-              src="./image/svg/arrow-down.svg"
-              alt="Seta apontando para baixo"
-              class="date-icon"
-            />
-          </div>
-        </header>
-
-        <main id="list">
-          <div class="card">
-            <div class="title-card">
-              <img src="./image/svg/icon-morning.svg" alt="Icone de sol" />
-              <span class="title-time"> Manhã </span>
-              <strong class="time"> 09h-12h </strong>
+        <div id="layout">
+          <header>
+            <div id="title">
+              <h1>Sua agenda</h1>
+              <p>
+                Aqui você pode ver todos os clientes e serviços agendados para
+                hoje.
+              </p>
             </div>
-            <ul>
-              <li>
-                <div class="schedule">
-                  <div class="header-schedule">
-                    <span class="time-schedule"> 13:00 </span>
-                    <div class="pet-and-tutor-info">
-                      <strong class="pet-name"> Rex </strong>
-                      /
-                      <span class="tutor-name"> Mariana Lima </span>
-                    </div>
-                  </div>
-                  <span class="service">Aplicação de Anti-pulgas</span>
-                  <button class="btn-remove-schedule">
-                    Remover agendamento
-                  </button>
-                </div>
-              </li>
 
-              <li>
-                <div class="schedule">
-                  <div class="header-schedule">
-                    <span class="time-schedule"> 13:00 </span>
-                    <div class="pet-and-tutor-info">
-                      <strong class="pet-name"> Brutos </strong>
-                      /
-                      <span class="tutor-name"> Carlos Henrique </span>
-                    </div>
-                  </div>
-                  <span class="service">Vacinação</span>
-                  <button class="btn-remove-schedule">
-                    Remover agendamento
-                  </button>
-                </div>
-              </li>
-
-              <li>
-                <div class="schedule">
-                  <div class="header-schedule">
-                    <span class="time-schedule"> 13:00 </span>
-                    <div class="pet-and-tutor-info">
-                      <strong class="pet-name"> Caramelo </strong>
-                      /
-                      <span class="tutor-name"> Mariana Steffanny </span>
-                    </div>
-                  </div>
-                  <span class="service">Limpeza de dentes</span>
-                  <button class="btn-remove-schedule">
-                    Remover agendamento
-                  </button>
-                </div>
-              </li>
-
-              <li>
-                <div class="schedule">
-                  <div class="header-schedule">
-                    <span class="time-schedule"> 13:00 </span>
-                    <div class="pet-and-tutor-info">
-                      <strong class="pet-name"> Rex </strong>
-                      /
-                      <span class="tutor-name"> Mariana Lima </span>
-                    </div>
-                  </div>
-                  <span class="service">Aplicação de Anti-pulgas</span>
-                  <button class="btn-remove-schedule">
-                    Remover agendamento
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <div class="title-card">
+            <div class="date-wrapper">
+              <img src="./image/svg/calendar.svg" alt="Icone de calendário" />
+              <input type="date" id="calendar" />
               <img
-                src="./image/svg/icon-afternoon.svg"
-                alt="Icone de sol com nuvens"
+                src="./image/svg/arrow-down.svg"
+                alt="Seta apontando para baixo"
+                class="date-icon"
               />
-              <span class="title-time"> Tarde </span>
-              <strong class="time"> 13h-18h </strong>
             </div>
-            <ul>
-              <li>
-                <div class="schedule">
-                  <div class="header-schedule">
-                    <span class="time-schedule"> 13:00 </span>
-                    <div class="pet-and-tutor-info">
-                      <strong class="pet-name"> Rex </strong>
-                      /
-                      <span class="tutor-name"> Mariana Lima </span>
-                    </div>
-                  </div>
-                  <span class="service">Aplicação de Anti-pulgas</span>
-                  <button class="btn-remove-schedule">
-                    Remover agendamento
-                  </button>
-                </div>
-              </li>
+          </header>
 
-              <li>
-                <div class="schedule">
-                  <div class="header-schedule">
-                    <span class="time-schedule"> 13:00 </span>
-                    <div class="pet-and-tutor-info">
-                      <strong class="pet-name"> Brutos </strong>
-                      /
-                      <span class="tutor-name"> Carlos Henrique </span>
+          <main id="list">
+            <div class="card">
+              <div class="title-card">
+                <img src="./image/svg/icon-morning.svg" alt="Icone de sol" />
+                <span class="title-time"> Manhã </span>
+                <strong class="time"> 09h-12h </strong>
+              </div>
+              <ul>
+                <li>
+                  <div class="schedule">
+                    <div class="header-schedule">
+                      <span class="time-schedule"> 13:00 </span>
+                      <div class="pet-and-tutor-info">
+                        <strong class="pet-name"> Rex </strong>
+                        /
+                        <span class="tutor-name"> Mariana Lima </span>
+                      </div>
                     </div>
+                    <span class="service">Aplicação de Anti-pulgas</span>
+                    <button class="btn-remove-schedule">
+                      Remover agendamento
+                    </button>
                   </div>
-                  <span class="service">Vacinação</span>
-                  <button class="btn-remove-schedule">
-                    Remover agendamento
-                  </button>
-                </div>
-              </li>
+                </li>
 
-              <li>
-                <div class="schedule">
-                  <div class="header-schedule">
-                    <span class="time-schedule"> 13:00 </span>
-                    <div class="pet-and-tutor-info">
-                      <strong class="pet-name"> Caramelo </strong>
-                      /
-                      <span class="tutor-name"> Mariana Steffanny </span>
+                <li>
+                  <div class="schedule">
+                    <div class="header-schedule">
+                      <span class="time-schedule"> 13:00 </span>
+                      <div class="pet-and-tutor-info">
+                        <strong class="pet-name"> Brutos </strong>
+                        /
+                        <span class="tutor-name"> Carlos Henrique </span>
+                      </div>
                     </div>
+                    <span class="service">Vacinação</span>
+                    <button class="btn-remove-schedule">
+                      Remover agendamento
+                    </button>
                   </div>
-                  <span class="service">Limpeza de dentes</span>
-                  <button class="btn-remove-schedule">
-                    Remover agendamento
-                  </button>
-                </div>
-              </li>
+                </li>
 
-              <li>
-                <div class="schedule">
-                  <div class="header-schedule">
-                    <span class="time-schedule"> 13:00 </span>
-                    <div class="pet-and-tutor-info">
-                      <strong class="pet-name"> Rex </strong>
-                      /
-                      <span class="tutor-name"> Mariana Lima </span>
+                <li>
+                  <div class="schedule">
+                    <div class="header-schedule">
+                      <span class="time-schedule"> 13:00 </span>
+                      <div class="pet-and-tutor-info">
+                        <strong class="pet-name"> Caramelo </strong>
+                        /
+                        <span class="tutor-name"> Mariana Steffanny </span>
+                      </div>
                     </div>
+                    <span class="service">Limpeza de dentes</span>
+                    <button class="btn-remove-schedule">
+                      Remover agendamento
+                    </button>
                   </div>
-                  <span class="service">Aplicação de Anti-pulgas</span>
-                  <button class="btn-remove-schedule">
-                    Remover agendamento
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </div>
+                </li>
 
-          <div class="card">
-            <div class="title-card">
-              <img src="./image/svg/icon-night.svg" alt="Icone de lua" />
-              <span class="title-time"> Noite </span>
-              <strong class="time"> 19h-21h </strong>
+                <li>
+                  <div class="schedule">
+                    <div class="header-schedule">
+                      <span class="time-schedule"> 13:00 </span>
+                      <div class="pet-and-tutor-info">
+                        <strong class="pet-name"> Rex </strong>
+                        /
+                        <span class="tutor-name"> Mariana Lima </span>
+                      </div>
+                    </div>
+                    <span class="service">Aplicação de Anti-pulgas</span>
+                    <button class="btn-remove-schedule">
+                      Remover agendamento
+                    </button>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <ul>
-              <li>
-                <div class="schedule">
-                  <div class="header-schedule">
-                    <span class="time-schedule"> 13:00 </span>
-                    <div class="pet-and-tutor-info">
-                      <strong class="pet-name"> Rex </strong>
-                      /
-                      <span class="tutor-name"> Mariana Lima </span>
-                    </div>
-                  </div>
-                  <span class="service">Aplicação de Anti-pulgas</span>
-                  <button class="btn-remove-schedule">
-                    Remover agendamento
-                  </button>
-                </div>
-              </li>
 
-              <li>
-                <div class="schedule">
-                  <div class="header-schedule">
-                    <span class="time-schedule"> 13:00 </span>
-                    <div class="pet-and-tutor-info">
-                      <strong class="pet-name"> Brutos </strong>
-                      /
-                      <span class="tutor-name"> Carlos Henrique </span>
+            <div class="card">
+              <div class="title-card">
+                <img
+                  src="./image/svg/icon-afternoon.svg"
+                  alt="Icone de sol com nuvens"
+                />
+                <span class="title-time"> Tarde </span>
+                <strong class="time"> 13h-18h </strong>
+              </div>
+              <ul>
+                <li>
+                  <div class="schedule">
+                    <div class="header-schedule">
+                      <span class="time-schedule"> 13:00 </span>
+                      <div class="pet-and-tutor-info">
+                        <strong class="pet-name"> Rex </strong>
+                        /
+                        <span class="tutor-name"> Mariana Lima </span>
+                      </div>
                     </div>
+                    <span class="service">Aplicação de Anti-pulgas</span>
+                    <button class="btn-remove-schedule">
+                      Remover agendamento
+                    </button>
                   </div>
-                  <span class="service">Vacinação</span>
-                  <button class="btn-remove-schedule">
-                    Remover agendamento
-                  </button>
-                </div>
-              </li>
+                </li>
 
-              <li>
-                <div class="schedule">
-                  <div class="header-schedule">
-                    <span class="time-schedule"> 13:00 </span>
-                    <div class="pet-and-tutor-info">
-                      <strong class="pet-name"> Caramelo </strong>
-                      /
-                      <span class="tutor-name"> Mariana Steffanny </span>
+                <li>
+                  <div class="schedule">
+                    <div class="header-schedule">
+                      <span class="time-schedule"> 13:00 </span>
+                      <div class="pet-and-tutor-info">
+                        <strong class="pet-name"> Brutos </strong>
+                        /
+                        <span class="tutor-name"> Carlos Henrique </span>
+                      </div>
                     </div>
+                    <span class="service">Vacinação</span>
+                    <button class="btn-remove-schedule">
+                      Remover agendamento
+                    </button>
                   </div>
-                  <span class="service">Limpeza de dentes</span>
-                  <button class="btn-remove-schedule">
-                    Remover agendamento
-                  </button>
-                </div>
-              </li>
+                </li>
 
-              <li>
-                <div class="schedule">
-                  <div class="header-schedule">
-                    <span class="time-schedule"> 13:00 </span>
-                    <div class="pet-and-tutor-info">
-                      <strong class="pet-name"> Rex </strong>
-                      /
-                      <span class="tutor-name"> Mariana Lima </span>
+                <li>
+                  <div class="schedule">
+                    <div class="header-schedule">
+                      <span class="time-schedule"> 13:00 </span>
+                      <div class="pet-and-tutor-info">
+                        <strong class="pet-name"> Caramelo </strong>
+                        /
+                        <span class="tutor-name"> Mariana Steffanny </span>
+                      </div>
                     </div>
+                    <span class="service">Limpeza de dentes</span>
+                    <button class="btn-remove-schedule">
+                      Remover agendamento
+                    </button>
                   </div>
-                  <span class="service">Aplicação de Anti-pulgas</span>
-                  <button class="btn-remove-schedule">
-                    Remover agendamento
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </main>
+                </li>
+
+                <li>
+                  <div class="schedule">
+                    <div class="header-schedule">
+                      <span class="time-schedule"> 13:00 </span>
+                      <div class="pet-and-tutor-info">
+                        <strong class="pet-name"> Rex </strong>
+                        /
+                        <span class="tutor-name"> Mariana Lima </span>
+                      </div>
+                    </div>
+                    <span class="service">Aplicação de Anti-pulgas</span>
+                    <button class="btn-remove-schedule">
+                      Remover agendamento
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="title-card">
+                <img src="./image/svg/icon-night.svg" alt="Icone de lua" />
+                <span class="title-time"> Noite </span>
+                <strong class="time"> 19h-21h </strong>
+              </div>
+              <ul>
+                <li>
+                  <div class="schedule">
+                    <div class="header-schedule">
+                      <span class="time-schedule"> 13:00 </span>
+                      <div class="pet-and-tutor-info">
+                        <strong class="pet-name"> Rex </strong>
+                        /
+                        <span class="tutor-name"> Mariana Lima </span>
+                      </div>
+                    </div>
+                    <span class="service">Aplicação de Anti-pulgas</span>
+                    <button class="btn-remove-schedule">
+                      Remover agendamento
+                    </button>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="schedule">
+                    <div class="header-schedule">
+                      <span class="time-schedule"> 13:00 </span>
+                      <div class="pet-and-tutor-info">
+                        <strong class="pet-name"> Brutos </strong>
+                        /
+                        <span class="tutor-name"> Carlos Henrique </span>
+                      </div>
+                    </div>
+                    <span class="service">Vacinação</span>
+                    <button class="btn-remove-schedule">
+                      Remover agendamento
+                    </button>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="schedule">
+                    <div class="header-schedule">
+                      <span class="time-schedule"> 13:00 </span>
+                      <div class="pet-and-tutor-info">
+                        <strong class="pet-name"> Caramelo </strong>
+                        /
+                        <span class="tutor-name"> Mariana Steffanny </span>
+                      </div>
+                    </div>
+                    <span class="service">Limpeza de dentes</span>
+                    <button class="btn-remove-schedule">
+                      Remover agendamento
+                    </button>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="schedule">
+                    <div class="header-schedule">
+                      <span class="time-schedule"> 13:00 </span>
+                      <div class="pet-and-tutor-info">
+                        <strong class="pet-name"> Rex </strong>
+                        /
+                        <span class="tutor-name"> Mariana Lima </span>
+                      </div>
+                    </div>
+                    <span class="service">Aplicação de Anti-pulgas</span>
+                    <button class="btn-remove-schedule">
+                      Remover agendamento
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </main>
+        </div>
+
+        <div id="footer-desktop">
+          <button id="btnNewScheduleDesktop" class="new-schedule">
+            Novo Agendamento
+          </button>
+        </div>
+
+        <div id="footer-mobile">
+          <button id="btnNewScheduleMobile" class="new-schedule">
+            Novo Agendamento
+          </button>
+        </div>
       </div>
+    </div>
+    <div id="modal-container">
+      <div id="modal-content">
+        <button id="btn-close-modal">
+          <img src="./image/svg/x.svg" alt="Botão em formato de x" />
+        </button>
+        <div id="header-modal">
+          <h2>Agende um atendimento</h2>
+          <p>Preencha os dados do cliente para realizar o agendamento:</p>
+        </div>
 
-      <div id="footer-desktop">
-        <button id="new-schedule">Novo Agendamento</button>
-      </div>
-
-      <div id="footer-mobile">
-        <button id="new-schedule">Novo Agendamento</button>
+        <form></form>
       </div>
     </div>
   </body>

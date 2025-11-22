@@ -188,7 +188,7 @@ li:last-child .schedule {
     display: none;
 }
 
-#new-schedule {
+.new-schedule {
     padding: 1.125rem 1.5rem;
     background-color: var(--background-brand);
     border: none;
@@ -200,8 +200,32 @@ li:last-child .schedule {
     transition: background-color 0.2s linear;
 }
 
-#new-schedule:hover {
+.new-schedule:hover {
     background-color: var(--background-highlights);
+}
+
+#modal-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: var(--black);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+}
+
+#modal-content {
+    padding: 8px 1.25rem 2.5rem;
+    background-color: var(--background-tertiary);
+    border-radius: 0.75rem;
+}
+
+#btn-close-modal {
+    margin-left: auto;
+    display: block;
 }
 
 @media (min-width: 768px) {
