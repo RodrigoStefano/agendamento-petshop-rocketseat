@@ -228,6 +228,52 @@ li:last-child .schedule {
     display: block;
 }
 
+#header-modal h2 {
+    margin-bottom: 4px;
+    font: var(--font-title);
+    color: var(--content-primary);
+}
+
+#header-modal p {
+    margin-bottom: 1.75rem;
+    font: var(--font-p-md);
+    color: var(--content-secondary);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group label {
+    font: var(--font-label-md);
+    color: var(--content-primary);
+    margin-bottom: 4px;
+}
+
+.input-wrapper {
+    padding: 0.75rem;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+}
+
+.input-wrapper:hover {
+    border-color: var(--border-secondary);
+}
+
+.input-wrapper:has(:focus) {
+    border-color: var(--border-brand);
+}
+
+.input-wrapper:has(:focus) input {
+    color: var(--content-primary);
+}
+
 @media (min-width: 768px) {
 
     header {

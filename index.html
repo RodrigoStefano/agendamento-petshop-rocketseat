@@ -294,6 +294,8 @@
         </div>
       </div>
     </div>
+
+    <!-- ESTRUTURA DO MODAL (NOVO AGENDAMENTO) -->
     <div id="modal-container">
       <div id="modal-content">
         <button id="btn-close-modal">
@@ -304,8 +306,33 @@
           <p>Preencha os dados do cliente para realizar o agendamento:</p>
         </div>
 
-        <form></form>
+        <form>
+          <div class="form-group">
+            <label for="tutor"> Nome do Tutor </label>
+            <div class="input-wrapper">
+              <img src="./image/svg/icon-tutor.svg" />
+              <input type="text" name="tutor" id="tutor" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="pet"> Nome do Pet </label>
+            <div class="input-wrapper">
+              <img src="./image/svg/icon-pet.svg" />
+              <input type="text" name="pet" id="pet" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone"> Telefone </label>
+            <div class="input-wrapper">
+              <img src="./image/svg/icon-phone.svg" />
+              <input type="tel" name="phone" id="phone" />
+            </div>
+          </div>
+        </form>
       </div>
     </div>
+    <!--  -->
   </body>
 </html>

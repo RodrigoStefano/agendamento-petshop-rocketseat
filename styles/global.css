@@ -87,6 +87,14 @@ button {
     border: none;
 }
 
+input {
+    background: none;
+    border: none;
+    flex: 1;
+    color: var(--content-secondary);
+    outline: none;
+}
+
 ::-webkit-scrollbar {
     width: 0.4rem;
 }
