@@ -35,7 +35,7 @@
 
             <div class="date-wrapper">
               <img src="./image/svg/calendar.svg" alt="Icone de calendário" />
-              <input type="date" id="calendar" />
+              <input type="date" id="calendar" class="date-or-time-imput" />
               <img
                 src="./image/svg/arrow-down.svg"
                 alt="Seta apontando para baixo"
@@ -282,13 +282,13 @@
         </div>
 
         <div id="footer-desktop">
-          <button id="btnNewScheduleDesktop" class="new-schedule">
+          <button id="btnNewScheduleDesktop" class="btn-default">
             Novo Agendamento
           </button>
         </div>
 
         <div id="footer-mobile">
-          <button id="btnNewScheduleMobile" class="new-schedule">
+          <button id="btnNewScheduleMobile" class="btn-default">
             Novo Agendamento
           </button>
         </div>
@@ -327,9 +327,62 @@
             <label for="phone"> Telefone </label>
             <div class="input-wrapper">
               <img src="./image/svg/icon-phone.svg" />
-              <input type="tel" name="phone" id="phone" />
+              <input type="tel" name="phone" id="phone" autocomplete="off" />
             </div>
           </div>
+
+          <div class="form-group">
+            <label for="description"> Descrição do serviço </label>
+            <div class="input-wrapper">
+              <textarea name="description" id="description" rows="3"></textarea>
+            </div>
+          </div>
+
+          <div id="time-and-date">
+            <div class="form-group width-full">
+              <label for="date-modal"> Data </label>
+
+              <div class="date-wrapper width-full">
+                <img src="./image/svg/calendar.svg" alt="Icone de calendário" />
+                <input
+                  type="date"
+                  id="date-modal"
+                  name="date-modal"
+                  class="date-or-time-imput width-full"
+                />
+                <img
+                  src="./image/svg/arrow-down.svg"
+                  alt="Seta apontando para baixo"
+                  class="date-icon"
+                />
+              </div>
+            </div>
+
+            <div class="form-group width-full">
+              <label for="time-modal"> Hora </label>
+
+              <div class="date-wrapper width-full">
+                <img
+                  src="./image/svg/icon-clock.svg"
+                  alt="Icone de calendário"
+                />
+                <input
+                  type="time"
+                  id="time-modal"
+                  name="time-modal"
+                  class="date-or-time-imput width-full"
+                />
+                <img
+                  src="./image/svg/arrow-down.svg"
+                  alt="Seta apontando para baixo"
+                  class="date-icon"
+                />
+              </div>
+            </div>
+          </div>
+          <button id="btn-schedule" class="btn-default align-left">
+            Agendar
+          </button>
         </form>
       </div>
     </div>

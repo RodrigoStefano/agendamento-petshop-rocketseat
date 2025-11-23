@@ -73,6 +73,7 @@
 body,
 button,
 input,
+textarea,
 a {
     font-family: var(--font-family-base);
 }
@@ -95,6 +96,15 @@ input {
     outline: none;
 }
 
+textarea {
+    background: none;
+    border: none;
+    flex: 1;
+    color: var(--content-secondary);
+    outline: none;
+    resize: none;
+}
+
 ::-webkit-scrollbar {
     width: 0.4rem;
 }
@@ -105,4 +115,12 @@ input {
 
 ::-webkit-scrollbar-track {
     background-color: transparent;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.align-left {
+    margin-left: auto;
 }
